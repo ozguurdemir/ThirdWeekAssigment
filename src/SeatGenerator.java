@@ -1,8 +1,5 @@
-package Business;
-
-import java.util.List;
 import java.util.ArrayList;
-
+import java.util.List;
 public class SeatGenerator {
     public static List<String> generateSeatList(int numRows, int seatsPerRow) {
         List<String> seatList = new ArrayList<>();
@@ -15,9 +12,7 @@ public class SeatGenerator {
                 String seatCode = seatChar + Integer.toString(seatNumber);
                 seatList.add(seatCode);
             }
-
         }
-
         return seatList;
     }
 }

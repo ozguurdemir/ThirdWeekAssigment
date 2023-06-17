@@ -1,7 +1,10 @@
-package Entities;
+public class TurkishAirlines extends Airline implements Catering {
+    public TurkishAirlines(Company name, int fare, boolean isInternational) {
+        super(name, fare, isInternational);
+    }
 
-public class TurkishAirlines extends Airline{
-    public TurkishAirlines(String name) {
-        super(name);
+    @Override
+    public void food() {
+        System.out.println("Yemek verildi");
     }
 }

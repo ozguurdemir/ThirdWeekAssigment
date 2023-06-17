@@ -1,8 +1,12 @@
-package Entities;
-
 public class Pegasus extends Airline implements Catering{
+    public Pegasus(Company name, int fare, boolean isInternational) {
+        super(name, fare, isInternational);
+    }
 
-    public Pegasus(String name) {
-        super(name);
+    @Override
+    public void food() {
+        if (isInternational == true){
+            System.out.println("yemek verildi");
+        }
     }
 }

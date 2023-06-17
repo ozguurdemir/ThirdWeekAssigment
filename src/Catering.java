@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface Catering {
+public interface Catering {
+    public void food();
 }
